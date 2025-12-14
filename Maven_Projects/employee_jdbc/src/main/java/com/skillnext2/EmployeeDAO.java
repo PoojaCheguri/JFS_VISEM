@@ -7,7 +7,7 @@ public class EmployeeDAO {
 
     private static final String URL = "jdbc:mysql://localhost:3306/skillnext2_db";
     private static final String USER = "root";
-    private static final String PASSWORD = "root"; // change this
+    private static final String PASSWORD = "poojasweety@9713"; // change this
 
     // Add employee
     public void addEmployee(Employee emp) throws Exception {
