@@ -8,7 +8,7 @@ public class App {
             EmployeeDAO dao = new EmployeeDAO();
 
             // Add employee
-            Employee e1 = new Employee("John Doe", "john@example.com", 50000);
+            Employee e1 = new Employee("pooja", "pooja@gmail.com",60000);
             dao.addEmployee(e1);
             System.out.println("Employee Added Successfully!");
 
