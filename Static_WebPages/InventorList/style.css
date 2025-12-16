@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.circle-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #555;
+    margin-right: 30px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.square-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 0;
+    object-fit: cover;
+    border: 5px solid #555;
+    margin-right: 30px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Static shadow effect for Gosling */
+.shadow-effect {
+    box-shadow: 0 0 20px 5px #ff0000; /* red shadow */
+}
+
+/* Blinking shadow animation */
+@keyframes blinkShadow {
+    0% { box-shadow: 0 0 20px 5px #ff0000; }
+    50% { box-shadow: 0 0 20px 5px #00ff00; } /* green */
+    100% { box-shadow: 0 0 20px 5px #0000ff; } /* blue */
+}
+
+.blink {
+    animation: blinkShadow 0.6s ease-in-out 3; /* blink 3 times */
+}
+
+
+.info-box {
+    border: 2px solid black;
+    padding: 15px;
+    width: 400px;
+    min-height: 150px;
+    background: #f9f9f9;
+}
