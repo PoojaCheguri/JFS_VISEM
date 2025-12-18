@@ -8,9 +8,9 @@ public class App {
     public static void main(String[] args) {
 
         Student student = new Student(
-            "sweety",
-            "sweety@.com",
-            18,
+            "Sreehitha",
+            "sreehitha@.com",
+            21,
             "JavaFullStack"
         );
 
