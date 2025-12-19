@@ -1,3 +1,4 @@
+
 package com.skillnext2;
 
 /**
@@ -28,7 +29,7 @@ public class PrimeCheck {
         }
 
         if (isPrime) {
-            System.out.println(num + " is a Prime Number");
+            System.out.println(num + " is a Prime Number which called itself and number ");
         } else {
             System.out.println(num + " is NOT a Prime Number");
         }
