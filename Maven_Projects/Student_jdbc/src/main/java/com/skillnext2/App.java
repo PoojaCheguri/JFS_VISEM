@@ -8,10 +8,10 @@ public class App {
     public static void main(String[] args) {
 
         Student student = new Student(
-            "chintu",
-            "chintu@.com",
-            17,
-            "JavaFullStack"
+            "pooja",
+            "pooja@.com",
+            21,
+            "JavaFullStackpatclasses"
         );
 
         StudentDAO dao = new StudentDAO();
