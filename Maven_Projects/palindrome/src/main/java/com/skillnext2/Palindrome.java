@@ -5,7 +5,7 @@ public class Palindrome{
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);   // taking user input
-        System.out.print("Enter a string or number: ");
+        System.out.print("Enter a string or number which is sutiable to palindrome: ");
         String input = sc.nextLine();
 
         // Convert input to lowercase for case-insensitive check
@@ -16,7 +16,7 @@ public class Palindrome{
 
         // Check palindrome
         if (original.equals(reversed)) {
-            System.out.println(input + " is a Palindrome.");
+            System.out.println(input + " it is a Palindrome. is a Palindrome.");
         } else {
             System.out.println(input + " is NOT a Palindrome.");
         }
