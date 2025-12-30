@@ -3,16 +3,14 @@
     <title>Student Form</title>
 </head>
 <body>
-
-<center>
-    <form action="save" method="post">
+<h2>Add New Student</h2>
+<form action="saveStudent" method="post">  <!-- Important -->
     Name: <input type="text" name="name"><br>
     Email: <input type="email" name="email"><br>
-    Course: <input type="text" name="course"><br>
-    <button type="submit">Save</button>
+    Salary: <input type="number" name="salary"><br>
+    <button type="submit">Save Student</button>
 </form>
 
-</center>
 
 </body>
 </html>

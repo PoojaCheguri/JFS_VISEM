@@ -21,7 +21,8 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Student entity -->
-        <mapping class="com.skillnext2.entity.Student"/>
+        <mapping class="com.skillnext2.Student"/>
+
 
     </session-factory>
 </hibernate-configuration>

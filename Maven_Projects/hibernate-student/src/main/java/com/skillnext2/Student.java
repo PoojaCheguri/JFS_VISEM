@@ -1,13 +1,9 @@
-package com.skillnext2.entity;
+package com.skillnext2;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "student")
+@Table(name="student")
 public class Student {
 
     @Id
@@ -17,30 +13,22 @@ public class Student {
     private String name;
     private int age;
 
+    // Default constructor (required by Hibernate)
     public Student() {}
 
+    // Constructor with fields
     public Student(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    public int getId() {
-        return id;
-    }
+    // Getters and Setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
 }

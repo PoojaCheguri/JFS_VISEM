@@ -1,4 +1,4 @@
-package com.skillnext2.util;
+package com.skillnext2;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -9,15 +9,19 @@ public class HibernateUtil {
 
     static {
         try {
-            sessionFactory = new Configuration()
-                    .configure("hibernate.cfg.xml")
-                    .buildSessionFactory();
-        } catch (Exception e) {
-            e.printStackTrace();
+            // Create the SessionFactory from hibernate.cfg.xml
+            sessionFactory = new Configuration().configure().buildSessionFactory();
+        } catch (Throwable ex) {
+            System.err.println("Initial SessionFactory creation failed." + ex);
+            throw new ExceptionInInitializerError(ex);
         }
     }
 
     public static SessionFactory getSessionFactory() {
         return sessionFactory;
+    }
+
+    public static void shutdown() {
+        getSessionFactory().close();
     }
 }
